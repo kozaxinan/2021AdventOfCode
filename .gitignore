@@ -1,0 +1,18 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+
+# Ignore service account credentials.
+flank-gradle-*.json
+
+# Mkdocs generated
+site
+
+# Pyhon Environment
+lib
+bin

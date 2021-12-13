@@ -1,22 +1,20 @@
-import java.io.File
-
 fun main() {
     val length = input.first().length
 
     var most = input
     for (i in 0 until length) {
-        most = asd(i, most, true)
+        most = addAllCoordinates(i, most, true)
     }
 
     var least = input
     for (i in 0 until length) {
-        least = asd(i, least, false)
+        least = addAllCoordinates(i, least, false)
     }
 
     println(most.joinToString(separator = "").toInt(2) * least.joinToString(separator = "").toInt(2))
 }
 
-private fun asd(index: Int, list: List<String>, most: Boolean): List<String> {
+private fun addAllCoordinates(index: Int, list: List<String>, most: Boolean): List<String> {
     if (list.size == 1) return list
     val i1: Int =
         list
